@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/bg_title"
+        android:gravity="center"
+        android:text="Advanced Tools"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_dialog_map"
+        android:gravity="center_vertical"
+        android:onClick="numberQuery"
+        android:text="Phone Number Geolocator"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_save"
+        android:gravity="center_vertical"
+        android:onClick="smsBackup"
+        android:text="SMS Backup"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:clickable="true"
+        android:drawableLeft="@android:drawable/ic_menu_agenda"
+        android:gravity="center_vertical"
+        android:onClick="smsRestore"
+        android:text="SMS Restore"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+</LinearLayout>

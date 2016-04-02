@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/bg_title"
+        android:gravity="center"
+        android:text="App Manager"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+  	<RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#9CFDAE" >
+
+        <TextView
+            android:id="@+id/tv_avail_rom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Memory Avail"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_avail_sd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="SDcard Avail"
+            android:textColor="#000000" />
+    </RelativeLayout>
+    
+  	   <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loading app info..." />
+        </LinearLayout>
+
+        <ListView
+            android:overScrollMode="never"
+            android:fastScrollEnabled="true"
+            android:id="@+id/lv_app_manager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </ListView>
+        
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Apps: " 
+            android:textColor="#000000"
+            android:background="#d6f7de"/>
+
+    </FrameLayout>
+
+</LinearLayout>

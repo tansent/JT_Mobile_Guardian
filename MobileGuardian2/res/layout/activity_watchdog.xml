@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <TextView
+       android:layout_width="300dip"
+       android:layout_height="50dip"
+       android:background="#66ff6600"
+       android:gravity="center"
+       android:text="Please enter password"
+       android:textColor="#000000"
+       android:textSize="22sp" />
+     
+     <TextView
+       android:id="@+id/tv_watchdog_appname"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:gravity="center"
+       android:text="app name"
+       android:textColor="#000000"
+       />
+     <ImageView 
+       android:id="@+id/iv_watchdog_icon"
+       android:layout_width="50dip"
+       android:layout_height="50dip"
+       
+       />
+
+    <EditText
+        android:id="@+id/et_watchdog_pwd"
+        android:layout_width="280dip"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword" />
+    
+    <Button 
+        android:id="@+id/btn_watchdog"
+        android:onClick="watchdogPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        />
+
+</LinearLayout>

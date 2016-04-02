@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jingtian="http://schemas.android.com/apk/res/com.jingtian.mobileguardian"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/bg_title"
+        android:gravity="center"
+        android:text="Setting Center"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <com.jingtian.mobileguardian.ui.SettingItemView
+        android:id="@+id/siv_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        jingtian:desc_off="update notification off"
+        jingtian:desc_on="update notification on"
+        jingtian:title="Set Update Notification" />
+
+    <com.jingtian.mobileguardian.ui.SettingItemView
+        android:id="@+id/siv_show_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        jingtian:desc_off="phone geolocator off"
+        jingtian:desc_on="phone geolocator on"
+        jingtian:title="Set Phone Geolocator" />
+
+    <com.jingtian.mobileguardian.ui.SettingItemView
+        android:id="@+id/siv_callsms_guardian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        jingtian:desc_off="blockade protection off"
+        jingtian:desc_on="blockade protection on"
+        jingtian:title="Set Blockade Protection" />
+    
+    <com.jingtian.mobileguardian.ui.SettingItemView
+        android:id="@+id/siv_watchdog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        jingtian:desc_off="watchdog protection off"
+        jingtian:desc_on="watchdog protection on"
+        jingtian:title="Set Watchdog Protection" />
+    
+    <com.jingtian.mobileguardian.ui.SettingClickView
+        android:id="@+id/scv_change_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        jingtian:desc_bg_off="Translucent"
+        jingtian:desc_bg_on="test on"
+        jingtian:title_bg="Set Geolocator Style" />
+
+    
+
+</LinearLayout>

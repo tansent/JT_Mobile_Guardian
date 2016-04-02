@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dip" >
+
+    <TextView
+        android:id="@+id/tv_cache_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="3dip"
+        android:text="App name"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_cache_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_cache_name"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="3dip"
+        android:text="cache size"
+        android:textColor="#88000000"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/iv_cache_delete"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:src="@drawable/cache_clear" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_below="@id/tv_cache_size"
+        android:background="#88000000" />
+
+</RelativeLayout>

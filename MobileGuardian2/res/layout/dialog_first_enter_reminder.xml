@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="300dip"
+        android:layout_height="40dip"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="Note"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="290dip"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dip"
+        android:layout_marginTop="8dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginLeft="5dip"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dip"
+        android:text="Total data counted here does not contain data generated using wifi;\nindividual data of the app listed below contains both wifi and non-wifi source."
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/cb_note"
+        android:layout_width="210dip"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginRight="20dip"
+        android:text="No longer remind me"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="120dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="5dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/button"
+        android:text="OK" />
+
+</LinearLayout>

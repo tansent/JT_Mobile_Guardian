@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="55dip"
+        android:background="@drawable/bg_title"
+        android:gravity="center"
+        android:text="Anti Theft"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="8dip"
+            android:text="Secure Number"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_protecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="8dip"
+            android:text="XXXX"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="8dip"
+            android:text="Anti Theft Condition"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/iv_protecting"
+            android:layout_width="25dip"
+            android:layout_height="25dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="5dip"
+            android:layout_marginTop="8dip"
+            android:src="@drawable/unlock" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/gradient_box"
+        android:clickable="true"
+        android:onClick="enterSetup"
+        android:text="Enter to Setup"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dip"
+        android:layout_marginTop="10dip"
+        android:background="#44000000" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dip"
+        android:layout_marginTop="8dip"
+        android:background="#44000000"
+        android:text="Functions List:"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        style="@style/SetupTextTheme"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:textSize="15sp"
+        android:text="GPS Trace: \n #*location*#" />
+
+    <TextView
+        style="@style/SetupTextTheme"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:textSize="15sp"
+        android:text="Play Alert Sound: \n #*alarm*#" />
+
+    <TextView
+        style="@style/SetupTextTheme"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:textSize="15sp"
+        android:text="Remote Data Destruction: \n #*wipedata*#" />
+
+    <TextView
+        style="@style/SetupTextTheme"
+        android:drawableLeft="@android:drawable/star_big_on"
+        android:textSize="15sp"
+        android:text="Remote Screen Lock: \n #*screenlock*#" />
+
+</LinearLayout>
