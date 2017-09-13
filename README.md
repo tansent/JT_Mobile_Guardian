@@ -1,6 +1,6 @@
 # JT_Mobile_Guardian
 
-Downloading Link: https://play.google.com/store/apps/details?id=com.jingtian.mobileguardian&rdid=com.jingtian.mobileguardian
+Downloading Link:<br> https://play.google.com/store/apps/details?id=com.jingtian.mobileguardian&rdid=com.jingtian.mobileguardian
 
 
 Functions include:
